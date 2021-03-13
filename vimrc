@@ -2,13 +2,16 @@
 " Plugins
 "--------------
 call plug#begin('~/.vim/plugged')
+ "development tool
+  Plug 'rickhowe/diffchar.vim' 
+
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'scrooloose/nerdtree'
   Plug 'ctrlpvim/ctrlp.vim'
-  Plug 'mattn/emmet-vim'
-  Plug 'tpope/vim-surround'
-  Plug 'tpope/vim-repeat'
+ "Plug 'mattn/emmet-vim'
+ "Plug 'tpope/vim-surround'
+ "Plug 'tpope/vim-repeat'
   Plug 'terryma/vim-multiple-cursors'
 
   " for general purpose development
@@ -22,12 +25,12 @@ call plug#begin('~/.vim/plugged')
   Plug 'airblade/vim-gitgutter'
 
   " for ruby/rails development
-  Plug 'vim-ruby/vim-ruby'
-  Plug 'tpope/vim-rails'
-  Plug 'thoughtbot/vim-rspec'
+ "Plug 'vim-ruby/vim-ruby'
+ "Plug 'tpope/vim-rails'
+ "Plug 'thoughtbot/vim-rspec'
 
   " for vue.js development
-  Plug 'leafOfTree/vim-vue-plugin'
+ "Plug 'leafOfTree/vim-vue-plugin'
 call plug#end()
 
 "--------------
