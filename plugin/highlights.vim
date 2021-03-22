@@ -140,6 +140,15 @@ function! s:MatchToggle()
     nunmap <Leader>F
     nunmap <Leader>n
     nunmap <Leader>N
+    nunmap 1
+    nunmap 2
+    nunmap 3
+    nunmap 4
+    nunmap 5
+    nunmap 6
+    nunmap 7
+    nunmap 8
+    nunmap 9
   else
     let g:match_maps = 1
     for i in range(1, 9)
@@ -155,6 +164,16 @@ function! s:MatchToggle()
     nnoremap <silent> <Leader>F :call <SID>Search(1)<CR>
     nnoremap <silent> <Leader>n :let @/=<SID>Search(0)<CR>
     nnoremap <silent> <Leader>N :let @/=<SID>Search(1)<CR>
+    nnoremap <silent> 1 :<C-U>call <SID>DoHighlight(4, 2, v:count)<CR>
+    nnoremap <silent> 2 :<C-U>call <SID>DoHighlight(5, 2, v:count)<CR>
+    nnoremap <silent> 3 :<C-U>call <SID>DoHighlight(6, 2, v:count)<CR>
+    nnoremap <silent> 4 :<C-U>call <SID>DoHighlight(7, 2, v:count)<CR>
+    nnoremap <silent> 5 :<C-U>call <SID>DoHighlight(8, 2, v:count)<CR>
+    nnoremap <silent> 6 :<C-U>call <SID>DoHighlight(9, 2, v:count)<CR>
+    nnoremap <silent> 7 :<C-U>call <SID>DoHighlight(11, 2, v:count)<CR>
+    nnoremap <silent> 8 :<C-U>call <SID>DoHighlight(12, 2, v:count)<CR>
+    nnoremap <silent> 9 :<C-U>call <SID>DoHighlight(13, 2, v:count)<CR>
+    nnoremap <silent> 0 :<C-U>call <SID>UndoHighlight(2)<CR>
   endif
   call s:WindowMatches(g:match_maps)
   echo 'Mappings for matching:' g:match_maps ? 'ON' : 'off'
