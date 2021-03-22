@@ -27,8 +27,8 @@ set scrolloff=3
 "--------------
 " Tab and space
 "--------------
-set softtabstop=2
-set shiftwidth=2
+set softtabstop=4
+set shiftwidth=4
 set expandtab
 
 "--------------
@@ -53,3 +53,7 @@ set noerrorbells
 set t_vb=
 set tm=500
 
+"-------------
+" Auto command
+"-------------
+autocmd BufWritePre *.cpp,*.h,*.cc,*.py,*.pl %s/\s\+$//e   "remove all tailing whitespaces 

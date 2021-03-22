@@ -59,3 +59,7 @@ scriptencoding utf-8
 "--------------
 let mapleader = ","
 
+"-------------
+" Auto command
+"-------------
+autocmd BufWritePre *.cpp,*.h,*.cc,*.py,*.pl %s/\s\+$//e   "remove all tailing whitespaces
