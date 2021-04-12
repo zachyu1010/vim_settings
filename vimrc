@@ -4,6 +4,7 @@
 call plug#begin('~/.vim/plugged')
  "development tool
   Plug 'rickhowe/diffchar.vim' 
+  Plug 'joe-skb7/cscope-maps'
 
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
