@@ -68,7 +68,9 @@ autocmd BufWritePre *.cpp,*.h,*.cc,*.py,*.pl %s/\s\+$//e   "remove all tailing w
 "-------------
 " code base
 "-------------
-set tags=$PROJ1/tags,$PROJ2/tags
+set tags=$PROJ1/tags,$PROJ2/tags,$PROJ3/tags
 cs add $PROJ1/cscope.out $PROJ1
 cs add $PROJ2/cscope.out $PROJ2
+cs add $PROJ3/cscope.out $PROJ3
+
 
