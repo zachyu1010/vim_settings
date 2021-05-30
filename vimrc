@@ -42,7 +42,7 @@ set clipboard=unnamed
 set noswapfile
 set hidden
 set nobomb            " no BOM(Byte Order Mark)
-set mouse=a
+"set mouse=a
 
 "--------------
 " Filetype and Encoding
