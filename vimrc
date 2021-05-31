@@ -60,9 +60,9 @@ scriptencoding utf-8
 "--------------
 let mapleader = ","
 " copy (write) highlighted text to .vimbuffer
-vmap <C-c> y:new ~/.vimbuffer<CR>VGp:x<CR> \| :!cat ~/.vimbuffer \| clip.exe <CR><CR>
+vmap <leader>c y:new ~/.vimbuffer<CR>VGp:x<CR> \| :!cat ~/.vimbuffer \| clip.exe <CR><CR>
 " paste from buffer
-map <C-v> :r ~/.vimbuffer<CR>
+map <leader>v :r ~/.vimbuffer<CR>
 
 "-------------
 " Auto command
