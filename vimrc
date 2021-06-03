@@ -24,6 +24,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'majutsushi/tagbar'
   Plug 'mileszs/ack.vim'
   Plug 'airblade/vim-gitgutter'
+  Plug 'mbbill/echofunc'
 
   " for ruby/rails development
  "Plug 'vim-ruby/vim-ruby'
@@ -76,5 +77,6 @@ set tags=$PROJ1/tags,$PROJ2/tags,$PROJ3/tags
 cs add $PROJ1/cscope.out $PROJ1
 cs add $PROJ2/cscope.out $PROJ2
 cs add $PROJ3/cscope.out $PROJ3
+set cscopequickfix=s-,c-,d-,i-,t-,e-,a-
 
 
