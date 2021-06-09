@@ -25,6 +25,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'mileszs/ack.vim'
   Plug 'airblade/vim-gitgutter'
   Plug 'mbbill/echofunc'
+  Plug 'vim-scripts/OmniCppComplete'
 
   " for ruby/rails development
  "Plug 'vim-ruby/vim-ruby'
