@@ -26,6 +26,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'airblade/vim-gitgutter'
   Plug 'mbbill/echofunc'
   Plug 'vim-scripts/OmniCppComplete'
+  Plug 'Lokaltog/powerline'
 
   " for ruby/rails development
  "Plug 'vim-ruby/vim-ruby'
@@ -66,6 +67,10 @@ vmap <leader>c y:new ~/.vimbuffer<CR>VGp:x<CR> \| :!cat ~/.vimbuffer \| clip.exe
 " paste from buffer
 map <leader>v :r ~/.vimbuffer<CR>
 
+nnoremap <-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 "-------------
 " Auto command
 "-------------
