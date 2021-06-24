@@ -6,6 +6,10 @@ call plug#begin('~/.vim/plugged')
   Plug 'rickhowe/diffchar.vim' 
   Plug 'joe-skb7/cscope-maps'
 
+  " session manager
+  Plug 'xolox/vim-misc'
+  Plug 'xolox/vim-session'
+
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'scrooloose/nerdtree'
@@ -67,7 +71,7 @@ vmap <leader>c y:new ~/.vimbuffer<CR>VGp:x<CR> \| :!cat ~/.vimbuffer \| clip.exe
 " paste from buffer
 map <leader>v :r ~/.vimbuffer<CR>
 
-nnoremap <-J> <C-W><C-J>
+nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
@@ -76,6 +80,9 @@ nnoremap <C-H> <C-W><C-H>
 "-------------
 autocmd BufWritePre *.cpp,*.h,*.cc,*.py,*.pl %s/\s\+$//e   "remove all tailing whitespaces
 
+autocmd VimLeave * NERDTreeClose
+" autocmd VimLeave * mksession!
+" autocmd VimEnter * source ~/.Session.vim
 "-------------
 " code base
 "-------------
