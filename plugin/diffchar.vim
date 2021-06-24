@@ -1,1 +1,1 @@
-let g:DiffExpr = 0
+let g:DiffExpr = 1
