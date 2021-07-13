@@ -20,11 +20,11 @@ call plug#begin('~/.vim/plugged')
   Plug 'terryma/vim-multiple-cursors'
 
   " for general purpose development
-  Plug 'tomtom/tcomment_vim'
-  Plug 'MarcWeber/vim-addon-mw-utils'
+  "Plug 'tomtom/tcomment_vim'
+  "Plug 'MarcWeber/vim-addon-mw-utils'
   Plug 'tomtom/tlib_vim'
-  Plug 'garbas/vim-snipmate'
-  Plug 'honza/vim-snippets'
+  "Plug 'garbas/vim-snipmate'
+  "Plug 'honza/vim-snippets'
   Plug 'majutsushi/tagbar'
   Plug 'mileszs/ack.vim'
   Plug 'airblade/vim-gitgutter'
